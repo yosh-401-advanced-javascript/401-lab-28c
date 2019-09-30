@@ -7,7 +7,6 @@ import './styles.css';
 class Main extends React.Component {
   render() {
     return <App />;
-
   }
 }
 

@@ -10,17 +10,18 @@ class App extends React.Component {
       name: '',
     };
   }
+
   counter = (event) => {
     event.preventDefault();
     console.log('here');
     this.setState((previousState) => {
-      return {count: previousState.count + 1}
+      return { count: previousState.count + 1 };
     });
   };
 
-  handleChange = event => {
+  handleChange = (event) => {
     console.log(event.target.value);
-    this.setState( {
+    this.setState({
       name: event.target.value,
     });
   };
